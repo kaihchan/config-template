@@ -1,0 +1,38 @@
+{
+	"compilerOptions": {
+		"module": "amd",
+		"moduleResolution": "node",
+		// default 'classic' when module='amd', change to 'node' to support searching './node_modules/{moduleName}/...' for .d.ts file
+		"jsx": "react",
+		"target": "es5",
+		"rootDir": "src",// transpile input dir
+		"outDir": "public/asset/js",// transpile output dir
+		"baseUrl": "./",
+		"experimentalDecorators": true,
+		"typeRoots": [
+			"./node_modules/@types/"
+		],
+		"lib": [
+			"es2015", "dom"
+		],
+		"paths": {
+		},
+		"inlineSourceMap": true,
+		"inlineSources": true,
+		"newLine": "LF",
+		"forceConsistentCasingInFileNames": true,
+		"noImplicitAny": false,
+		"noImplicitReturns": true,
+		"noImplicitThis": false,
+		"removeComments": true,
+		"noEmitOnError": true,
+		"listEmittedFiles": true,
+		"pretty": true
+	},
+	"include": [
+        "src/**/*"
+    ],
+	"exclude": [
+		"node_modules"
+	]
+}
