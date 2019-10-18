@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/x-icon" media="all" href="./asset/favicon.ico" />
+    <!-- <link rel="apple-touch-icon" href="logo192.png" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="" />
+
+    <!-- meta tag for robot crawlers 
+        See https://developers.google.com/search/reference/robots_meta_tag -->
+    <meta name="robots" content="nofollow" />
+    <meta name="googlebot" content="nofollow" />
+    <meta name="googlebot-news" content="nofollow">
+
+    <!-- For PWA
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="manifest.json" />
+
+    <title>Put your page Title Here</title>
+
+    <!-- include any 3rd party async script here, for example google analytics analytics.js/gtag.js -->
+    
+    <!-- include your stylesheet tag on the bottom of head tag -->
+    <link rel="stylesheet" type="text/css" href="./asset/css/index.css" />
+  </head>
+  <body>
+    <!-- root container for your js framework 
+    React, Vue, etc... -->
+    <div id="root"></div>
+
+    <!-- User rel="noopener" when link to other websites
+        See https://developers.google.com/web/tools/lighthouse/audits/noopener -->
+    <a href="https://examplepetstore.com" target="_blank" rel="noopener">...</a>
+
+    <noscript>Show when javascript is not enable in client agent</noscript>
+    <script>
+        // place your inlined script here
+    </script>
+
+    <!-- include your script tag on the bottom of body tag
+        Put common dependency first eg. polyfills, utils library -->
+    <script src="./asset/js/vendor/lib.js"></script>
+    <script src="./asset/js/App.js"></script>
+  </body>
+</html>
